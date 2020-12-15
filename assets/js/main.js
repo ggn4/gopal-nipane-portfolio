@@ -43,3 +43,23 @@ function scrollActive() {
     }
   });
 }
+
+// CONTACT FORM SCRIPT //
+
+function validateForm() {
+  let name = document.contactForm.name.value;
+  let email = document.contactForm.email.value;
+  let project = document.contactForm.project.value;
+  let message = document.contactForm.message.value;
+  if (name == "" || email == "" || project == "" || message == "") {
+    document.querySelector(".error").innerHTML = "Please fill all the fields.";
+  } else {
+    document.querySelector(".error").innerHTML = "";
+    document.querySelector(".success").innerHTML =
+      "I got your details. I will contact to you soon.";
+    document.contactForm.name.value = "";
+    document.contactForm.email.value = "";
+    document.contactForm.project.value = "";
+    document.contactForm.message.value = "";
+  }
+}

@@ -632,6 +632,10 @@ img {
   font-family: var(--body-font);
 }
 
+.contact__message {
+  justify-content: center;
+}
+
 .contact ::placeholder {
   color: var(--first-color-dark);
   font-family: var(--body-font);
