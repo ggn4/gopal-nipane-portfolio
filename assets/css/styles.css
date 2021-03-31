@@ -676,7 +676,6 @@ img {
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-2);
   color: var(--first-color);
-  text-shadow: 1px 1px 1px var(--first-color-light);
 }
 
 .footer__description {
